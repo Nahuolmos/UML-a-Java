@@ -25,22 +25,18 @@ public class Ciudad {
         this.gastosMantenimiento = gastosMantenimiento;
     }
 
-    // Calcula la suma de los 5 impuestos
     public double getTotalRecaudado() {
         return imp1 + imp2 + imp3 + imp4 + imp5;
     }
 
-    // Verifica si la ciudad gasta más de lo que recauda
     public boolean tieneDeficit() {
         return gastosMantenimiento > getTotalRecaudado();
     }
 
-    // Verifica si entra en el criterio de control del país
     public boolean debeSerControlada() {
         return habitantes > 100000;
     }
 
-    // Getters y Setters
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
     public int getHabitantes() { return habitantes; }
