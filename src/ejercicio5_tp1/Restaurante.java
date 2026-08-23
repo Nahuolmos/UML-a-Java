@@ -25,7 +25,6 @@ public class Restaurante {
         this.sucursales.add(sucursal);
     }
 
-    // Método que aplica la regla de negocio de un máximo de 20 platos
     public boolean agregarPlato(Plato plato) {
         if (this.platosOfrecidos.size() < 20) {
             this.platosOfrecidos.add(plato);
