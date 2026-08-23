@@ -8,6 +8,8 @@ package ejercicio1_tp1;
  *
  * @author Lenovo
  */
-public class Triangulo {
-    
+public class Triangulo extends Poligono {
+    public Triangulo() {
+        super();
+    }
 }

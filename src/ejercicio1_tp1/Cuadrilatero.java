@@ -8,6 +8,8 @@ package ejercicio1_tp1;
  *
  * @author Lenovo
  */
-public class Cuadrilatero {
-    
+public class Cuadrilatero extends Poligono {
+    public Cuadrilatero() {
+        super();
+    }
 }
