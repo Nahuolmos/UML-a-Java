@@ -3,24 +3,23 @@ package ejercicio1_tp1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Poligono extends Figura {
-    private int numeroLados;
-    private List<Lado> lados = new ArrayList<>();
+public abstract class Poligono extends Figura {
+    private List<Lado> lados;
 
     public Poligono() {
         super();
+        this.lados = new ArrayList<>();
     }
 
     public void agregarLado(Lado lado) {
-        lados.add(lado);
-        numeroLados = lados.size();
+        this.lados.add(lado);
     }
 
-    public int getNumeroLados() {
-        return numeroLados;
-    }
-    
     public List<Lado> getLados() {
         return lados;
+    }
+    
+    public int getCantidadDeLados() {
+        return this.lados.size();
     }
 }
