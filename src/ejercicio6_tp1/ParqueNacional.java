@@ -1,12 +1,12 @@
 package ejercicio6_tp1;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 public class ParqueNacional {
     private String nombre;
-    private Date fechaDeclaracion;
+    private LocalDate fechaDeclaracion;
 
     private List<ComunidadAutonoma> comunidades;
     private List<Area> areas;
@@ -14,7 +14,7 @@ public class ParqueNacional {
     private List<Alojamiento> alojamientos;
     private List<Personal> empleados;
 
-    public ParqueNacional(String nombre, Date fechaDeclaracion) {
+    public ParqueNacional(String nombre, LocalDate fechaDeclaracion) {
         this.nombre = nombre;
         this.fechaDeclaracion = fechaDeclaracion;
         this.comunidades = new ArrayList<>();
@@ -28,7 +28,7 @@ public class ParqueNacional {
         return nombre;
     }
 
-    public Date getFechaDeclaracion() {
+    public LocalDate getFechaDeclaracion() {
         return fechaDeclaracion;
     }
 

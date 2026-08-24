@@ -1,20 +1,18 @@
 package ejercicio6_tp1;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Excursion {
     private String codigo;
-    private Date dia;
-    private String hora;
+    private LocalDateTime fecha;
     private List<Alojamiento> alojamientosOrganizadores;
     private List<Visitante> inscriptos;
 
-    public Excursion(String codigo, Date dia, String hora) {
+    public Excursion(String codigo, LocalDateTime fecha) {
         this.codigo = codigo;
-        this.dia = dia;
-        this.hora = hora;
+        this.fecha = fecha;
         this.alojamientosOrganizadores = new ArrayList<>();
         this.inscriptos = new ArrayList<>();
     }
@@ -31,12 +29,8 @@ public class Excursion {
         this.inscriptos.add(visitante);
     }
 
-    public Date getDia() {
-        return dia;
-    }
-
-    public String getHora() {
-        return hora;
+    public LocalDateTime getFecha() {
+        return fecha;
     }
 
     public List<Visitante> getInscriptos() {

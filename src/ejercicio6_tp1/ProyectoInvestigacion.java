@@ -1,14 +1,14 @@
 package ejercicio6_tp1;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class ProyectoInvestigacion {
     private String nombre;
     private float presupuesto;
-    private Date fechaInicio;
-    private Date fechaFin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
 
-    public ProyectoInvestigacion(String nombre, float presupuesto, Date fechaInicio, Date fechaFin) {
+    public ProyectoInvestigacion(String nombre, float presupuesto, LocalDate fechaInicio, LocalDate fechaFin) {
         this.nombre = nombre;
         this.presupuesto = presupuesto;
         this.fechaInicio = fechaInicio;

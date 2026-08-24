@@ -1,15 +1,15 @@
 package ejercicio6_tp1;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class ReservaAlojamiento {
     private Visitante visitante;
     private Alojamiento alojamiento;
     private String habitacion;
-    private Date fechaInicio;
-    private Date fechaFin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
 
-    public ReservaAlojamiento(Visitante visitante, Alojamiento alojamiento, String habitacion, Date fechaInicio, Date fechaFin) {
+    public ReservaAlojamiento(Visitante visitante, Alojamiento alojamiento, String habitacion, LocalDate fechaInicio, LocalDate fechaFin) {
         this.visitante = visitante;
         this.alojamiento = alojamiento;
         this.habitacion = habitacion;
@@ -29,11 +29,11 @@ public class ReservaAlojamiento {
         return habitacion;
     }
 
-    public Date getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 }
